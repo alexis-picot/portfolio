@@ -1,11 +1,11 @@
 @font-face {
   font-family: "glacial-indiference";
-  src: url(/Fonts/GlacialIndifference-Regular.otf);
+  src: url(./Fonts/GlacialIndifference-Regular.otf);
 }
 
 @font-face {
     font-family: "sifonn";
-    src: url(/Fonts/SIFONN_PRO.otf);
+    src: url(./Fonts/SIFONN_PRO.otf);
 }
 
 * {
