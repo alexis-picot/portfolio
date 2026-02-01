@@ -12,6 +12,14 @@
           <a href="index.html">Accueil</a>
           <a href="travaux.html">Travaux</a>
         </nav>
+        <div class="box1">
+          <h1>Alexis Picot</h1>
+          <img
+            src="medias/photo profil.jpg"
+            alt="photo de profil"
+            class="pdp"
+          />
+        </div>
         <div>
           <h2>Qui suis-je</h2>
           <p>
@@ -46,7 +54,38 @@
             les projets web et numériques.
           </p>
         </div>
+        <div class="social-buttons">
+          <a
+            href="https://www.linkedin.com/in/alexis-picot-232a72338/"
+            target="_blank"
+            class="social-btn"
+          >
+            <img src="medias/logo linkedin.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="mailto:alexis.picot@etu.unilim.fr" class="social-btn">
+            <img src="medias/logo gmail.png" alt="Email" />
+            <span>Email</span>
+          </a>
+        </div>
+        <div>
+          <h2>Citation aléatoire</h2>
+          <p id="quote">Chargement de la citation…</p>
+        </div>
       </div>
     </header>
+    <script>
+      fetch("https://api.quotable.io/random")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById("quote").textContent =
+            `"${data.content}" — ${data.author}`;
+        })
+        .catch(() => {
+          document.getElementById("quote").textContent =
+            "Impossible de charger la citation pour le moment.";
+        });
+    </script>
   </body>
 </html>

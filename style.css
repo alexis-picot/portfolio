@@ -3,6 +3,11 @@
   src: url(/Fonts/GlacialIndifference-Regular.otf);
 }
 
+@font-face {
+    font-family: "sifonn";
+    src: url(/Fonts/SIFONN_PRO.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +31,18 @@ body {
 
 h1 {
   margin-bottom: 10px;
+  font-family: 'sifonn';
 }
 
 h2 {
   margin-top: 30px;
   margin-bottom: 10px;
+  font-family: 'sifonn';
 }
 
 p {
   margin-bottom: 15px;
-  font-family:;
+  font-family: 'glacial-indiference';
 }
 
 a {
@@ -44,11 +51,15 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color:#5c4e2d;
 }
 
 nav {
   margin-bottom: 30px;
+  background-color: #d6c59a;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 nav a {
@@ -59,4 +70,51 @@ nav a {
 ul {
   list-style: square;
   margin-left: 20px;
+}
+
+.pdp {
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 180px;
+    height: 50px;
+
+    background-color: #d6c59a; /* adapte à ta charte */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-btn:hover {
+    background-color: #c5b488;
 }
