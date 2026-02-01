@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -70,21 +70,20 @@
           </a>
         </div>
         <div>
-          <h2>Citation aléatoire</h2>
-          <p id="quote">Chargement de la citation…</p>
+          <h2>Conseil du jour</h2>
+          <p id="advice">Chargement...</p>
         </div>
       </div>
     </header>
     <script>
-      fetch("https://api.quotable.io/random")
-        .then((response) => response.json())
+      fetch("https://api.adviceslip.com/advice")
+        .then((r) => r.json())
         .then((data) => {
-          document.getElementById("quote").textContent =
-            `"${data.content}" — ${data.author}`;
+          document.getElementById("advice").textContent = data.slip.advice;
         })
         .catch(() => {
-          document.getElementById("quote").textContent =
-            "Impossible de charger la citation pour le moment.";
+          document.getElementById("advice").textContent =
+            "Impossible de charger le conseil pour le moment.";
         });
     </script>
   </body>
