@@ -1,56 +1,62 @@
+@font-face {
+  font-family: "glacial-indiference";
+  src: url(/Fonts/GlacialIndifference-Regular.otf);
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 6px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
 }
 
 h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  font-family:;
 }
 
 a {
-    color: #0066cc;
-    text-decoration: none;
+  color: #0066cc;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 nav a {
-    margin-right: 15px;
-    font-weight: bold;
+  margin-right: 15px;
+  font-weight: bold;
 }
 
 ul {
-    list-style: square;
-    margin-left: 20px;
+  list-style: square;
+  margin-left: 20px;
 }
